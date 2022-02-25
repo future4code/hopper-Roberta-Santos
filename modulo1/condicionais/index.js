@@ -12,6 +12,7 @@ c) é informado o preço incorreto, pois o sistema procura o próximo break e co
 3 a) Solicita um número para usuário, converte a String para number e armazena na variável numero
 b) Se digitou 10 será exibido "Esse número passou no teste " Se for -10 será exibido erro mensagem is not defined
 c) Sim. Pois a variavel foi definida dentro do bloco de ação da condição ,ou seja, escopo local e o console está chamando a variavel no escopo global
+*/
 
 //Exercicio de código 
 //1.
@@ -54,7 +55,7 @@ switch(respostaTurno){
         console.log('Boa noite!')
         break
 }
-*/
+
 //4.
 
 const generoFilme = prompt('Qual tipo de filme deseja assistir?')
