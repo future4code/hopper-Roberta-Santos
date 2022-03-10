@@ -8,7 +8,8 @@ b) o for... of não é suficiente ,pois ele exibe apenas o conteúdo do Array e 
 
 //Escrita de código
 
-//1.
+//1. 
+
 let qtdBichinhos = Number(prompt('Quantos bichinhos você tem?'))
 let nomeBichinhos = []
 let nomeInformado
@@ -83,3 +84,4 @@ let verificaMaiorEMenor = (Array) =>{
    console.log(`O maior número é ${valorMaximo} e o menor número é ${valorMinimo}`)
 }
 verificaMaiorEMenor(arrayOriginal)
+
