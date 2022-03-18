@@ -94,29 +94,38 @@ function retornaNPrimeirosPares(n) {
 
 // EXERCÍCIO 09
 function classificaTriangulo(ladoA, ladoB, ladoC) {
-if (ladoA == ladoB && ladoA == ladoC && ladoB == ladoC){
-  return 'Equilátero'
-}
+    if (ladoA == ladoB && ladoA == ladoC && ladoB == ladoC){
+      return 'Equilátero'
+    }
 
-if (ladoA != ladoB && ladoA != ladoC && ladoB != ladoC){
-  return 'Escaleno'
-}
-if (ladoA != ladoB || ladoA != ladoC || ladoB != ladoC && ladoA == ladoB && ladoA == ladoC  ){
-  return 'Isósceles'
-}
-
+    if (ladoA != ladoB && ladoA != ladoC && ladoB != ladoC){
+      return 'Escaleno'
+    }
+    if (ladoA != ladoB || ladoA != ladoC || ladoB != ladoC && ladoA == ladoB && ladoA == ladoC  ){
+      return 'Isósceles'
+    }
 
 
 }
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-  
+    array.sort(function(a, b) {
+      return a - b;
+    });
+    
+
+    let novoArray3 = []
+    novoArray3.push(array[array.length-2])
+    novoArray3.push(array[1]);
+
+    return novoArray3
+
 }
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
-   
+
 }
 
 // EXERCÍCIO 12
