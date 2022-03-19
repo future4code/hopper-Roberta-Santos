@@ -1,0 +1,9 @@
+Como pessoas desenvolvedoras, a maior parte do nosso tempo passamos resolvendo problemas. Para simplificar, podemos seguir 7 passos que irá facilitar a abstração de ideias e consequentemente agilizar o trabalho de disponibilizar soluções.
+1 - Ter atenção do enunciado. Isso é fundamental, pois podemos encontrar pontos essenciais que podem esclarecer o que precisa ser feito e evitar retrabalho posteriormente.
+2 - Retirar informações relevantes. Pontos na descrição podem facilitar a codificação, então podemos usar os verbos do enunciado para definir as primeiras variáveis e facilitar a montagem de uma estrutura lógica do objetivo real.
+3 - Pensar nas entradas e saídas. Avaliar como os dados serão recebidos, e como deverão ser manipulados e entregues.
+4 - Fazer um esquema visual. Podemos citar exemplo do caso de uso, e montar diagramas com a lógica do código para alcançar o objetivo, umas das opções para isso é através da construção do fluxograma.
+5 - Crie um código feio. Se possível rascunhe seu brainstorm e depois leve para ide as melhores estratégias e teste as opções para definir qual melhor atende o solicitado.
+6 - Testar força bruta. A solução escolhida pode aparentemente boa, porém pode deixar a desejar na performance e comprometer todo o código, com isso devemos avaliar quais pontos são necessários ajustar e transcrever na liguagem desejada.
+7 - Refatorar. Para isso podemos começar nas etapas principais, confirmar se a nomenclatura das variáveis que fizemos apenas abstração de ideias estão com nomes realmente eficientes para a futura manutenção do código de outras pessoas, além de separar as funções de cada elemento.
+Seguindo esses passos aumentará a chance de sucesso e ter uma entrega eficaz.  
