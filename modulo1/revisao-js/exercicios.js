@@ -156,15 +156,18 @@ function retornaPessoasAutorizadas(pessoas) {
 
 // EXERCÍCIO 13B
 function retornaPessoasNaoAutorizadas(pessoas) {
-  
+  const NaopodemEntrar = pessoas.filter((pessoa, index, array)=>{
+    return pessoa.idade<=14 || pessoa.altura<=1.5 || pessoa.idade>=60
+  })
+  return NaopodemEntrar
 }
 
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
-contas = contas.map(()=>{
-
-})
-
+   
+const total = contas.compras.reduce((total, currentElement) => total + currentElement)
+ saldoAtual - total
+return contas
 }
 
 // EXERCÍCIO 15A
@@ -186,5 +189,6 @@ function retornaArrayOrdenadoAlfabeticamente(consultas) {
 
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {
+
    
 }
