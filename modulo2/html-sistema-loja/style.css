@@ -1,0 +1,43 @@
+.marca{
+    background-color: rgb(160, 160, 189);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.chamada{
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 5px;
+}
+
+footer{
+    background-color: rgb(218, 216, 216);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+img{
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+
+}
+a{
+    text-decoration: none;
+    color: rgb(85, 84, 84);
+}
+.link{
+    text-decoration: none;
+    color: rgb(85, 84, 84);
+    font-weight: bold;
+    padding: 5px;
+    
+}
+section{
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(207, 199, 199);
+    margin: 15px 0 5px 0;
+    
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
