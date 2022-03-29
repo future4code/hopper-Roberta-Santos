@@ -129,6 +129,13 @@ img{
     width: 40px;
     height: 40px;
 }
+.botaoComprar:active{
+    color: white;
+}
+.botaoComprar:hover{
+    background-color: #635a3d;
+    color: azure;
+}
 
 #back-button {
     background-color: white;
