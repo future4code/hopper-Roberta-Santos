@@ -109,6 +109,7 @@ div:last-child {
 
 table {
     width: 60%;
+    margin:auto;
     text-align: center;
     
 
@@ -148,8 +149,10 @@ img{
     border-radius: 5px;
     font-size: 10px;
     color: black;
+    margin: 100px 40vw;
 }
 
 #back-button:hover {
     background-color: #635a3d
+    
 }
