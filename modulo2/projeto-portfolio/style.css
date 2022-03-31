@@ -28,11 +28,22 @@ body{
 .menu{
     display: inline;
     margin-left: 35%;
+    color: black;
+    font-weight: bold;
+    
     
 }
 a{
     text-decoration: none;
-    padding: 20px;
+    padding: 15px;
+    color: black;
+    text-shadow: 1px;
+}
+a:hover{
+    background-color: rgb(133, 128, 128);
+}
+a:focus{
+    background-color: rgb(192, 191, 191);
 }
 .texto{
     height: 250px;
@@ -42,6 +53,8 @@ a{
     border-radius: 5px;
     text-align: justify;
     padding: 50px;
+    
+
 }
 p{
     padding: 10px;
