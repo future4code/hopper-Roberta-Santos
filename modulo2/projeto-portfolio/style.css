@@ -17,10 +17,26 @@ body{
 .logo{
     height: 50px;
     background: rgba(204, 204, 204, 0.4);
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
      
     
 }
-.titulo{
+header{
+    display: flex;
+    flex-direction: row;
+    
+}
+.menu{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 20px;
+    align-items: center;
+}
+/*.titulo{
     display: inline;
     width: 200px;
     margin: 10px; 
@@ -32,24 +48,28 @@ body{
     font-weight: bold;
     
     
-}
+}*/
 a{
     text-decoration: none;
     padding: 15px;
     color: black;
     text-shadow: 1px;
+    justify-content: flex-end;
+    color: black;
+    font-weight: bold;
 }
 a:hover{
     background-color: rgb(133, 128, 128);
+    border-radius: 5px;
 }
 a:focus{
     background-color: rgb(192, 191, 191);
 }
 .texto{
     height: 250px;
-    width:350px;
+    width:450px;
     background: rgba(204, 204, 204, 0.4); 
-    margin: 100px;
+    margin: 50px;
     border-radius: 5px;
     text-align: justify;
     padding: 50px;
@@ -58,4 +78,31 @@ a:focus{
 }
 p{
     padding: 10px;
+}
+
+/* Experiencias*/
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#cursos{
+    background: rgba(204, 204, 204, 0.6);
+}
+
+/* Galeria */
+
+#galeriapj{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projeto{
+    height: 200px;
+    width:300px;
+    background: rgba(204, 204, 204, 0.4); 
+    margin: 50px;
+    padding: 20px;
+    justify-content: center;
 }
