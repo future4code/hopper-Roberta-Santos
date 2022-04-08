@@ -3,6 +3,7 @@
     padding: 0;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 body{
     display: grid;
     grid-template-rows: 70px 1fr 50px;
@@ -12,18 +13,19 @@ header{
     background-color: red;    
     justify-content: space-between;
     align-items: center;
+    
 }
 header > p{
     color: white;
-    font-size: 30px;
+    font-size: 2em;
     font-weight: 600;
-    padding: 15px;
+    padding: 1em;
     text-shadow: black 0.1em 0.1em 0.2em; 
 }
 header > input{
     background-color: white;
-    height: 25px;
-    margin: 15px;
+    height: 2em;
+    margin: 1em;
     border: 1px white;
     border-radius: 2px;
 }
@@ -31,18 +33,18 @@ main{
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 10px;
-    column-gap: 10px;
+    row-gap: 0.8em;
+    column-gap: 0.8em;
 }
 main .box-video{
-    margin: 5px;
+    margin: 0.3em;
 }
 main .box-video img{
-    width: 350px;
-    height: 250px;
+    width: 100%;
+    height: auto;
 }
 main .box-video p{
-    font-size: 20px;
+    font-size: 1.5em;
     font-weight: bold;
     text-align: center;
 }
@@ -52,20 +54,20 @@ main .box-video p{
 }
 video{
     justify-content: space-around;
-    width: 520px;
-    height: 440px;
+    width: 33em;
+    height: 27em;
     margin: auto;
 }
 h1, #description{
     text-align: center;
-    margin-top: 15px;
+    margin-top: 1em;
 }
 #description{
  font-weight: bold;
- margin: 10px 0 10px 0;
+ margin: 0.7em 0 0.7em 0;
 }
 #descriptionContent{
-    margin: 10px;
+    margin: 1em;
     text-align: justify;
 }
 
@@ -74,9 +76,9 @@ footer{
     flex-direction: column;
     background-color: red;
     color: white;
-    font-size: 15px;
+    font-size: 1em;
     font-weight: 600;
-    padding: 15px;
+    padding: 1em;
     text-shadow: black 0.1em 0.1em 0.2em; 
     text-align: center;
     
@@ -84,4 +86,18 @@ footer{
 footer p{
     align-items: center;
     
+}
+
+
+@media screen and (max-width: 375px){
+    main{
+    grid-template-rows: repeat(8,1fr) ;
+    grid-template-columns: 1fr ;
+    row-gap: 0.8em;
+    column-gap: 0.8em;
+    }
+    main .box-video img{
+        width: 100%;
+        height: auto;
+}
 }
