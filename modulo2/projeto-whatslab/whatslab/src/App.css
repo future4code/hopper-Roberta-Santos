@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.box{
+  background-color: #e3eedd;
+  height: 35em;
+  width:40em;
+  margin:auto;
+  flex: 1 1 0%;
+  display:flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  border: 1px solid black;
+  justify-content: flex-end;
+  border-radius: 5px;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input{
+  background: linear-gradient(21deg, #99c7bde8, #1bead9e0);
+  padding: 3px;
+  border-radius: 7px;
+}
+.control{
+  padding-top: 1em;
+}
+.nom{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+p{
+  background-color: #fff;
+  width: 300px;
+  position: relative;
+  border-radius: 5px;
+  margin: 5px;
+  margin-left: 2px;
+  display: inline;
+}
+.inpe{
+  width: 8em;
+  margin-left: 1px;
+  
+}
+.botao{
+  border-radius: 0.6em;
+  margin-left: 1px;
+}
+.botao:before{
+  content: "";
+  transform: translateY(20px);
+}
+.botao:hover{
+ background-color: rgb(23, 19, 233, 0.534);
+ transition-delay: 0.2s;
+ transition: all 0.5s ease-in;
+ color: white;
+}
+.inp{
+  width:34em;
+  margin-left: 1px;
 }
