@@ -1,13 +1,17 @@
 import axios from "axios";
 import React from "react";
 
+
 export default class ConsultarPlaylist extends React.Component{
    
     state ={
-        Playlists:[]
+        Playlists:[],
+        Musicas: {}
     }
     componentDidMount(){
         this.pegarPlaylistExistente()
+      
+
     }
 
     pegarPlaylistExistente = () =>{
@@ -23,6 +27,35 @@ export default class ConsultarPlaylist extends React.Component{
             console.log(err.response)
         })
     }
+    deletarPlaylist = (playlistId) =>{
+        const url = `https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${playlistId}`
+        axios.delete(url,{
+            headers: {
+                Authorization: "roberta-santos-hopper"
+            } }).then(()=>{
+                alert('Playlist Deletada')
+                this.pegarPlaylistExistente()
+            }).catch (()=>{
+                alert('Algo deu errado!')
+            })
+    }
+    detalharPlaylist = (playlistId) =>{
+        const url = `https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${playlistId}/tracks`
+
+        axios.get(url,{
+            headers: {
+                Authorization: "roberta-santos-hopper"
+            } }).then((res)=>{
+                console.log(this.state.Musicas)
+                this.setState({ Musicas: res.data.result.tracks})
+                
+
+            }).catch (()=>{
+                alert('Algo deu errado!')
+            })
+
+
+    }
 
     render(){
         return(
@@ -34,11 +67,15 @@ export default class ConsultarPlaylist extends React.Component{
                         return (
                             <ul>
                                 <li>{playlist.name}</li>
+                                <button onClick={()=> this.detalharPlaylist(playlist.id)}>Detalhar</button>
+                                <button onClick={()=> this.deletarPlaylist(playlist.id)}>Deletar</button>
+                                
                             </ul>
                         )
 
                     })
                 }
+                
             </div>
         )
     }

@@ -1,6 +1,7 @@
 import React from "react"
 import CriarPlaylist from "./Components/CriarPlaylist"
 import ConsultarPlaylist from "./Components/ConsultarPlaylist"
+import AdicionarMusicas from "./Components/AdicionarMusicas"
 
 class App extends React.Component{
 
@@ -16,6 +17,9 @@ class App extends React.Component{
         <CriarPlaylist/>
         <div>
         <ConsultarPlaylist/>
+        </div>
+        <div>
+          <AdicionarMusicas/>
         </div>
 
       </div>
