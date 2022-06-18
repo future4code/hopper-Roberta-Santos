@@ -2,7 +2,7 @@
 const CreateTrip = ()=>{
     return(
         <>
-            
+            <h1>Criar Viagem</h1>
         </>
 
 

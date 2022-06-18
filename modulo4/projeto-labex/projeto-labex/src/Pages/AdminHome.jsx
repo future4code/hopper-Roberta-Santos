@@ -2,7 +2,7 @@
 const AdminHome = ()=>{
     return(
         <>
-            
+            <h1>Admin acesso</h1>
         </>
 
 
