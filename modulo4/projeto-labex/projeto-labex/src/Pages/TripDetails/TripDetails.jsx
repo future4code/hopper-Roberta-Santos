@@ -1,7 +1,23 @@
 import { useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
+import axios from "axios";
 
 const TripDetails = ()=>{
 
+    useEffect(()=>{
+        const URL = "https://us-central1-labenu-apis.cloudfunctions.net/labeX/roberta/trip/7QNnQjgC0iTqyIv7MWDm";
+        const headers = {
+            headers:{
+                auth:localStorage.getItem("token")
+            }
+        }
+        axios.get(URL, headers).then((res)=>{
+            console.log(res.data)
+        }).catch((err)=>{
+            console.log(err.response);
+        })
+
+    },[])
     
     const navigate = useNavigate()
 
