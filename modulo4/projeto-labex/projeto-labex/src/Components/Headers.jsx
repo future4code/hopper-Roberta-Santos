@@ -1,12 +1,12 @@
-import { useNavigate } from "react-router-dom"
+// import { useNavigate } from "react-router-dom"
+// impo
+// export default function Headers(){
 
-export default function Headers(){
+//     const navigate = useNavigate()
 
-    const navigate = useNavigate()
-
-    return<Headers>
+//     return<Headers>
         
-            <button onClick={() => navigate("/listtrips")}>Lista de Viagens</button>
-            <button onClick={() => navigate("/login")}>Login</button>
-'</Headers>
-}
+//             <button onClick={() => navigate(/listtrips)}>Lista de Viagens</button>
+//             <button onClick={() => navigate("/login")}>Login</button>
+// </Headers>
+// }
