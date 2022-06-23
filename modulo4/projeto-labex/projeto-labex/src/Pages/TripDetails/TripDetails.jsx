@@ -1,8 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import React, { useEffect } from "react";
+
 import axios from "axios";
+import { useProtectedPage } from "../../hooks/useProtectedPages";
+
 
 const TripDetails = ()=>{
+   
+    useProtectedPage()
 
     useEffect(()=>{
         const URL = "https://us-central1-labenu-apis.cloudfunctions.net/labeX/roberta/trip/7QNnQjgC0iTqyIv7MWDm";
@@ -19,7 +24,7 @@ const TripDetails = ()=>{
 
     },[])
     
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     const backButton = (value) =>{
         navigate(value);
