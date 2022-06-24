@@ -16,6 +16,10 @@ const AdminHome = ()=>{
     const newTrip = (value) => {
         navigate(value);
     }
+    const detailing = (value) => {
+        navigate(value)
+
+    }
 
 
     const[trips, setTrips] = useState([]);
@@ -38,7 +42,7 @@ const AdminHome = ()=>{
    
     const listaViagens = trips.map((trip)=>{
         return <div>
-            <button key={trip.id}>{trip.name}</button>
+            <button key={trip.id} onClick={() => detailing(`/tripdetails/${trip.id}`)}>{trip.name}</button>
             <button key={trip.name} onClick={() => deletarViagem(trip.id)}>Deletar</button>
         </div>
     })
@@ -65,9 +69,9 @@ const AdminHome = ()=>{
         <>
        
            
-           <button onClick={() => backButton("/")}>Voltar</button>
+           <button onClick={() => backButton("/login")}>Voltar</button>
            <button onClick={() => newTrip("/createtrip")}>Criar Nova Viagem</button>
-           <button>Logout</button>
+           <button onClick={() => backButton("/")}>Logout</button>
 
             <h1>Lista de viagens disponíveis</h1>
             {listaViagens}
