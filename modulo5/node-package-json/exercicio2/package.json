@@ -1,0 +1,12 @@
+{
+  "name": "exercicio2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "operacao.js",
+  "scripts": {
+    "start": "clear && node ./operacao.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
