@@ -1,0 +1,1 @@
+export const TABLE_NAME = "User_Arq"
