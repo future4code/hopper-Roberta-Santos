@@ -2,57 +2,16 @@
 
 import express, { Express, Request, Response } from "express"
 import cors from "cors"
-import knex from "knex"
-import dotenv from "dotenv"
+
 import { v4 } from "uuid"
-import Knex from "knex"
+import { post } from "./models/post"
 
-/**************************** CONFIG ******************************/
-
-dotenv.config()
-
-export const connection: Knex = knex({
-   client: "mysql",
-   connection: {
-      host: process.env.DB_HOST,
-      user: process.env.DB_USER,
-      password: process.env.DB_PASSWORD,
-      database: process.env.DB_SCHEMA,
-      port: 3306,
-      multipleStatements: true
-   }
-})
 
 const app: Express = express()
 app.use(express.json())
 app.use(cors())
 
-/**************************** TYPES ******************************/
 
-type authenticationData = {
-   id: string
-}
-
-type user = {
-   id: string,
-   name: string,
-   email: string,
-   password: string
-}
-
-enum POST_TYPES {
-   NORMAL = "normal",
-   EVENT = "event"
-}
-
-type post = {
-   id: string,
-   photo: string,
-   description: string,
-   type: POST_TYPES,
-   createdAt: Date,
-   authorId: string
-}
 
 /**************************** SERVICES ******************************/
 
