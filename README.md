@@ -31,3 +31,9 @@ TMDB-API
 ✔️ Opção voltar para a página de listagem de filmes 
 ✔️ O app criado em React
 ✔️ Css responsivo
+![Captura de tela 2023-03-25 173031](https://user-images.githubusercontent.com/58230561/227743216-83d3da56-2103-457b-8e39-bd9270eab738.jpg)
+![Captura de tela 2023-03-25 173330](https://user-images.githubusercontent.com/58230561/227743233-eb10cb54-4360-4122-a9b2-43028bbbc9ac.jpg)
+![Captura de tela 2023-03-25 173403](https://user-images.githubusercontent.com/58230561/227743234-b18d1461-3400-4f7c-92ba-9ad9d506565c.jpg)
+![Captura de tela 2023-03-25 173423](https://user-images.githubusercontent.com/58230561/227743235-e73eb409-0030-427e-8519-1cbead3108a7.jpg)
+![Captura de tela 2023-03-25 173221](https://user-images.githubusercontent.com/58230561/227743236-8c53f554-d496-4c82-a6e9-a38cb90f1445.jpg)
+
